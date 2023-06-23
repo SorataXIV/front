@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="header-title.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="records.css">
+    <link rel="stylesheet" href="modal.css">
+    <script src="main.js" defer></script>
+    <title>Música Wiki</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Cadastro de Músicas</h1>
+    </header>
+    <main>
+        <button type="button" class="button blue" id="cadastrarMusica">Cadastrar uma música</button>
+        <table class="records">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Artista</th>
+                    <th>Album</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pyramid Of Bones</td>
+                    <td>The Voidz</td>
+                    <td>Virtue</td>
+                    <td>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>One Way Trigger</td>
+                    <td>The Strokes</td>
+                    <td>Comedown Machine</td>
+                    <td>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Me And Your Mama</td>
+                    <td>Childsh Gambino</td>
+                    <td>"Awaken, My Love!"</td>
+                    <td>
+                        <button type="button" class="button green">editar</button>
+                        <button type="button" class="button red">excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Nova Música</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form class="modal-form">
+                    <input type="text" class="modal-field" placeholder="Nome da Música">
+                    <input type="text" class="modal-field" placeholder="Nome do Artista">
+                    <input type="text" class="modal-field" placeholder="Nome do Album">
+                </form>
+                <footer class="modal-footer">
+                    <button class="button green">Salvar</button>
+                    <button class="button red">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+        footer
+    </footer>
+</body>
+</html>
